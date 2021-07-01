@@ -3,19 +3,13 @@
 <head>
     <!-- jsFiddle - https://jsfiddle.net/ohqffLez/2/-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ingeniousselectjs</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="ingeniousselect.js"></script>
+    <script src="ingeniousselect-old.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            $('select').ingeniousselect({
-//                containOptionsWidth: true
-            });
-
-            $('#select1').on('change', function (e) {
-                console.log('on change', e);
-            });
+            $('select').ingeniousselect();
         });
     </script>
     <style media="screen">
@@ -68,16 +62,10 @@
         .ingeniousSelect-optionsWrapper__option--selected {
             background: #dfdfdf;
         }
-
-        .ingeniousSelect-portal {
-            background-color: rgba(0, 0, 0, 0.25);
-            transition: opacity 200ms;
-        }
     </style>
 </head>
 <body>
 <div>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <form>
         <label for="select1">Select 1</label>
         <select name="select1" class="select1" id="select1">
@@ -118,7 +106,6 @@
             </optgroup>
         </select>
     </form>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </div>
 </body>
 </html>
